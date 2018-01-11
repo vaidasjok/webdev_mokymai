@@ -1,0 +1,35 @@
+p {
+	text-indent: 10px;
+	display: inline;
+	padding: 20px;
+}
+p#unikalus {
+	font-size: 17px; 
+	font-style: italic; 
+	font-weight: bold; 
+}
+a span.box {
+	display: block;
+	border: 1px solid #000;
+	padding: 10px;
+}
+span.bold {
+	font-weight: bold;
+}
+#footer, #header {
+	padding: 50px;
+	background-color: #000;
+	color: #fff;
+}
+#content, #column-right {
+	width: 50%;
+}
+#content {
+	float: left;
+	color: #fff;
+	background-color: #fff;
+}
+#column-right {
+	float: right;
+	background-color: red;
+}
