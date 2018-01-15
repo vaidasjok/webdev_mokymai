@@ -25,6 +25,9 @@ header {
 	height: 150px;
 	width: 150px;
 	background-color: #996699;
+	background-image: url('img/logo_liutas.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 nav {
 	position: absolute;
