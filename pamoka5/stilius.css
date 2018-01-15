@@ -2,10 +2,23 @@
 	margin: 0px;
 	padding: 0px;
 }
+a:link, a:visited {
+	color: #fff;
+	text-decoration: none;
+} 
+a:hover, a:active {
+	color: grey;
+}
+#container {
+	display: block;
+	width: 1100px;
+	margin: 0 auto;
+}
 header {
 	display: block;
 	background-color: lightgrey;
 	padding: 20px;
+	position: relative;
 }
 #logo {
 	display: block;
@@ -13,11 +26,15 @@ header {
 	width: 150px;
 	background-color: #996699;
 }
+nav {
+	position: absolute;
+	top: 70px;
+	right: 20px;
+}
 nav ul li {
 	display: inline-block;
 }
 nav ul li a {
-	
 	padding: 10px 20px;
 	border: 1px solid grey;
 }
