@@ -16,7 +16,7 @@ a:hover, a:active {
 
 header {
   display: block;
-  /*background-color: lightgrey;*/
+  background-color: lightgrey;
   padding: 20px;
   position: relative; }
 
