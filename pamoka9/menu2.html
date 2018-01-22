@@ -10,6 +10,11 @@
 		* {
 			box-sizing: border-box;
 		}
+		#wrapper {
+			max-width: 1100px;
+			margin: 0 auto;
+			display: block;
+		}
 		nav ul > li {
 			list-style-type: none;
 			display: inline-block;
@@ -30,18 +35,27 @@
 		}
 		.megacontent {
 			display: none;
-			width: 100%;
+			max-width: 1100px;
 			height: 100px;
+			width: 100%;
 		}
 		nav ul li:hover > div.megacontent {
 			display: block;
 			position: absolute;
 			top: 45px;
-			left: 0px;
+			left: 50%;
 			width: 100%;
 			padding-left: 0px;
 			height: 200px;
-			background-color: red;
+		}
+		.megacontent .megacontent_inner {
+			display: block;
+			position: relative;
+			left: -50%;
+			width: 1100px;
+			height: 200px;
+			padding: 50px;
+			background-color: blue;
 		}
 		nav ul li ul li {
 			display: block;
@@ -57,35 +71,38 @@
 	</style>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="apie/"><i class="fa fa-address-book-o" aria-hidden="true"></i> Apie</a></li>
-				<li><a href="#">Paslaugos</a>
-					<div class="megacontent">
-						<div class="col">
-							faskldfnaksdlka
-							<ul>
-								<li><a href="">Web dizaino paslaugos</a></li>
-								<li><a href="">Programmavimo paslaugos</a></li>
-								<li><a href="">SEO paslaugos</a></li>
-							</ul>
+	<div id="wrapper">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="apie/"><i class="fa fa-address-book-o" aria-hidden="true"></i> Apie</a></li>
+					<li><a href="#">Paslaugos</a>
+						<div class="megacontent">
+							<div class="megacontent_inner">
+								<div class="col">
+									<ul>
+										<li><a href="">Web dizaino paslaugos</a></li>
+										<li><a href="">Programmavimo paslaugos</a></li>
+										<li><a href="">SEO paslaugos</a></li>
+									</ul>
+								</div>
+								<div class="col">
+									<ul>
+										<li><a href="">Web dizaino paslaugos</a></li>
+										<li><a href="">Programmavimo paslaugos</a></li>
+										<li><a href="">SEO paslaugos</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						dafadas
-						<div class="col">
-							<ul>
-								<li><a href="">Web dizaino paslaugos</a></li>
-								<li><a href="">Programmavimo paslaugos</a></li>
-								<li><a href="">SEO paslaugos</a></li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li><a href="#">Atlikti darbai</a></li>
-				<li><a href="#">Atsiliepimai</a></li>
-				<li><a href="#">Kontaktai</a></li>
-			</ul>
-		</nav>
-	</header>
+					</li>
+					<li><a href="#">Atlikti darbai</a></li>
+					<li><a href="#">Atsiliepimai</a></li>
+					<li><a href="#">Kontaktai</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	
 </body>
 </html>
