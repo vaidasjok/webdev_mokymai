@@ -14,20 +14,35 @@
 	<div class="container" id="">
 		<div class="row">
 			<div class="col-xs-12 col-md-12 col-lg-12">
-				<header >
-					<a href="#"><div id="logo"></div></a>
-					<nav id="main_nav">
+				<header>
+					<nav>
 						<ul>
-							<li><a href="apie/"><i class="fa fa-camera-retro fa-lg"></i>Apie</a></li>
-							<li><a href="#">Paslaugos</a></li>
+							<li><a href="apie/"><i class="fa fa-address-book-o" aria-hidden="true"></i> Apie</a></li>
+							<li><a href="#">Paslaugos</a>
+								<div class="megacontent">
+									<div class="megacontent_inner">
+										<div class="col">
+											<ul>
+												<li><a href="">Web dizaino paslaugos</a></li>
+												<li><a href="">Programmavimo paslaugos</a></li>
+												<li><a href="">SEO paslaugos</a></li>
+											</ul>
+										</div>
+										<div class="col">
+											<ul>
+												<li><a href="">Web dizaino paslaugos</a></li>
+												<li><a href="">Programmavimo paslaugos</a></li>
+												<li><a href="">SEO paslaugos</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
 							<li><a href="#">Atlikti darbai</a></li>
 							<li><a href="#">Atsiliepimai</a></li>
 							<li><a href="#">Kontaktai</a></li>
 						</ul>
 					</nav>
-					<div class="social">
-						
-					</div>
 				</header>
 			</div>
 		</div><!-- #row -->
@@ -38,7 +53,15 @@
 			<div class="col-md-9 bg-info">
 				<h1>Pradinis puslapis</h1>
 				<button class="btn btn-primary">Paslaptingas mygtukas</button>
-				<img src="assets/img/logo_liutas.png" alt="Pavyzdinis ">
+				<div id="target">Vaida</div>
+				<form action="#" onsubmit="name_transfer();">
+					  First name:<br>
+					  <input type="text" name="firstname" id="name" value="Įrašykite savo vardą">
+					  
+					  <br><br>
+					  <input type="submit" value="Submit">
+					</form> 
+				<div id="name_placement">Čia bus įrašytas naujai suvestas vardas</div>
 			</div>
 		</div>
 	<div class="row">
@@ -59,10 +82,42 @@
 				
 			</footer>
 		</div>
-	</div>	
+	</div>
+
 		
 		
 	</div>
+	<script>
+		// pradinis tekstas
+		var text = 'Sveiki, žmonės';
+		var number_integer = 1;
+		var text = "1";
+		var number_float = 2.56;
+		var boolean = false;
+		var saldus_gyvenimas = ['šokoladas', 'ledai', 'likeris'];
+		var combined =  text + " " + number_integer;
+		var user = ['vardas', 'pavarde'];
+		var user2 = {'name' : 'Vaida'};
+		saldus_gyvenimas[1] = 'obuolys';
+
+		public function name_transfer() {
+			event.preventDefault()
+			var name = document.getElementById('name').innerHTML;
+			document.getElementById('name_placement').value = name;
+		}
+		
+
+		// suteikiu kintamajam kita reiksme
+		// text = 'Ko žiūri?';
+		// alert(name);
+
+		// if (3>1) {
+		// 	alert('boolean verte yra true');
+		// } else {
+		// 	alert('boolean verte yra false');
+		// }
+
+	</script>
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
