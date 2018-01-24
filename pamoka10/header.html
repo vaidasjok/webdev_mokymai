@@ -54,12 +54,12 @@
 				<h1>Pradinis puslapis</h1>
 				<button class="btn btn-primary">Paslaptingas mygtukas</button>
 				<div id="target">Vaida</div>
-				<form action="#" onsubmit="name_transfer();">
+				<form action="#" onsubmit="name_transfer()">
 					  First name:<br>
 					  <input type="text" name="firstname" id="name" value="Įrašykite savo vardą">
 					  
 					  <br><br>
-					  <input type="submit" value="Submit">
+					  <input onclick="name_transfer()" type="submit" value="Submit">
 					</form> 
 				<div id="name_placement">Čia bus įrašytas naujai suvestas vardas</div>
 			</div>
@@ -100,10 +100,9 @@
 		var user2 = {'name' : 'Vaida'};
 		saldus_gyvenimas[1] = 'obuolys';
 
-		public function name_transfer() {
-			event.preventDefault()
-			var name = document.getElementById('name').innerHTML;
-			document.getElementById('name_placement').value = name;
+		function name_transfer() {
+			var name = document.getElementById('name').value;
+			document.getElementById('name_placement').innerHTML = name;
 		}
 		
 
