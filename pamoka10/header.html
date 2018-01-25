@@ -8,7 +8,11 @@
 	<meta description="fasfdfasd">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/stilius.css">
-	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script src="assets/js/pamoka.js"></script>
+
 </head>
 <body>
 	<div class="container" id="">
@@ -54,7 +58,7 @@
 				<h1>Pradinis puslapis</h1>
 				<button class="btn btn-primary">Paslaptingas mygtukas</button>
 				<div id="target">Vaida</div>
-				<form action="#" onsubmit="name_transfer()">
+				<form action="#" onsubmit="name_transfer()" method="post">
 					  First name:<br>
 					  <input type="text" name="firstname" id="name" value="Įrašykite savo vardą">
 					  
@@ -88,6 +92,7 @@
 		
 	</div>
 	<script>
+
 		// pradinis tekstas
 		var text = 'Sveiki, žmonės';
 		var number_integer = 1;
@@ -98,13 +103,40 @@
 		var combined =  text + " " + number_integer;
 		var user = ['vardas', 'pavarde'];
 		var user2 = {'name' : 'Vaida'};
-		saldus_gyvenimas[1] = 'obuolys';
-
-		function name_transfer() {
-			var name = document.getElementById('name').value;
-			document.getElementById('name_placement').innerHTML = name;
-		}
+		//saldus_gyvenimas[1] = 'obuolys';
 		
+
+
+
+		// for (var i=0; i<saldus_gyvenimas.length; i++) {
+		// 	if(saldus_gyvenimas[i] == 'ledai') {
+		// 		alert('radau');
+		// 	} else {
+		// 		alert('nenoriu ir neveikiu');
+		// 	}
+		// }
+
+
+		// Operatoriai
+		// var skaicius = 1;
+		// alert( skaicius == Number('1') );
+
+		// skaicius == '1asilas' // true
+		// skaicius === '1' // false
+		// skaicius === Number('1') // true
+		// !=
+		// *
+		// /
+		// +
+		// -
+		// %
+
+
+		
+		
+
+
+
 
 		// suteikiu kintamajam kita reiksme
 		// text = 'Ko žiūri?';
@@ -117,6 +149,7 @@
 		// }
 
 	</script>
-<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>
