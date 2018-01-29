@@ -13,9 +13,8 @@
 			
 		
 window.onload="name_transfer()";
-	function name_transfer(name='Vardas', event) 
+	function name_transfer(event) 
 		{
-			var no_errors = true;
 			event.preventDefault();
 			//var name = document.getElementById('name').value;
 			alert(name);

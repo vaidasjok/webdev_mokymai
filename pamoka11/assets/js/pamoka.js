@@ -1,12 +1,22 @@
-window.onload="name_transfer()";
-	function name_transfer(name='Vardas') 
+// window.onload="initFunctions()";
+$( document ).ready(function() {
+    initFunctions();
+});
+
+function initFunctions() 
+{
+	name_transfer();
+	
+}
+
+function name_transfer(event, name='Vardas') 
 		{
-			var no_errors = true;
 			event.preventDefault();
-			//var name = document.getElementById('name').value;
 			alert(name);
-			var name = $('#name').val();
+			name = $('#name').val();
 			document.getElementById('name_placement').innerHTML = name;
 
 		}
+
+	
 		
