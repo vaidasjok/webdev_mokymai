@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+a:link, a:visited {
+  color: red;
+  text-decoration: none; }
+
+a:hover, a:active {
+  color: #333; }
+
+.container {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+header {
+  padding: 10px; }
+
+#logo {
+  display: block;
+  height: 150px;
+  width: 150px;
+  /*background-color: #996699;*/
+  background-image: url("img/logo_liutas.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+/* nauji pakeitimai */
+.green {
+  background-color: grey; }
+
+#wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: block; }
+
+nav > ul {
+  margin-top: 30px; }
+
+nav ul > li {
+  list-style-type: none;
+  display: inline-block; }
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  border: 1px solid #666; }
+
+nav ul li a:link, nav ul li a:hover {
+  color: #999; }
+
+nav ul li ul {
+  display: block;
+  height: 45px;
+  position: relative; }
+
+.megacontent {
+  display: none;
+  max-width: 1100px;
+  height: 100px;
+  width: 100%; }
+
+nav ul li:hover > div.megacontent {
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  width: 100%;
+  padding-left: 0px;
+  height: 200px;
+  z-index: 1001; }
+
+.megacontent .megacontent_inner {
+  display: block;
+  position: relative;
+  left: -50%;
+  width: 100%;
+  height: 200px;
+  padding: 50px;
+  background-color: blue; }
+
+nav ul li ul li {
+  display: block; }
+
+nav ul li ul li a {
+  border: none; }
+
+.megacontent .col {
+  width: 40%;
+  display: inline-block; }
+
+/*# sourceMappingURL=stilius.css.map */
