@@ -1,0 +1,10 @@
+Sukurti internetinį puslapį su tokiu funkcionalumu:
+Forma turi du laukus, į kuriuos galima suvesti valandą ir minutes;
+Jei laikas yra tarp 12:00 ir 13:00, matosi blokas, kurio fone yra paveiksliukas su kavos motyvu (kavos puodelis, kava geriantys žmonės ar pan.) ir bloke matosi užrašas "Pietų pertrauka. Kviečiame apsilankyti maloniam Jūsų projekto aptarimui ir pasimėgauti skaniu kavos puodeliu!";
+Stiliai turi būti aprašomi Sass stiliaus dokumentuose;
+Puslapis turi turėtų stilių - spalvas, paveiksliukus, turi būti "responsive".
+
+Užuominos:
+Bloko rodymas valdomas css klasių pagalba;
+Css klasių keitimas valdomas Javascript pagalba (getElementById, .className);
+
